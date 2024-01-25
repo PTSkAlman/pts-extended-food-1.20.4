@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ptsextendedfood",
+	"version": "${version}",
+	"name": "PTS Extended Food",
+	"description": "Food made more fun!",
+	"authors": [
+		"PepetheSkAlman"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ptsextendedfood/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.pts.extendedfood.PTSExtendedFood"
+		],
+		"client": [
+			"net.pts.extendedfood.PTSExtendedFoodClient"
+		],
+		"fabric-datagen": [
+			"net.pts.extendedfood.PTSExtendedFoodDataGenerator"
+		]
+	},
+	"mixins": [
+		"ptsextendedfood.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
